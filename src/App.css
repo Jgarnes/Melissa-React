@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(224, 55, 55);
 }
 
 .App-link {
@@ -35,4 +35,90 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.hero {
+  position: relative;
+  
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.hero-text {
+  position: absolute;
+  top: 20%;
+  left: 33%;
+  transform: translate(-50%, -60%);
+  color: rgb(153, 77, 6);
+  text-align: center;
+  font-family: 'Playball', cursive;
+}
+
+.title{
+  font-size: 80px;
+ border-bottom: 1px solid rgb(153, 77, 6);
+}
+
+.box {
+  position: absolute;
+  top: 150%;
+  left: 32%;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  border-color: rgb(184, 134, 11);
+  border-width: 10px 10px;
+  padding: 25px 15px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 250px;
+  font-size: 50px;
+}
+
+a {
+  color: rgb(153, 77, 6);
+}
+
+#banner {
+  background-color: lightblue;
+}
+
+.pos {
+  /* height: 100px; */
+  
+  margin: 20px auto;
+  
+}
+
+.row-content {
+  padding: 30px 30px;
+  border-bottom: 1px ridge;
+  min-height: 200px;  
+}
+
+.container {
+  width: auto; 
+}
+
+header h1 {
+  text-align: center;
+}
+
+.media-body {
+  text-align: center;
+}
+
+.about {
+  height: 100%;
+}
+
+footer {
+  border: 1px solid black;
+  background-color: black;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.linear {
+  background-image: linear-gradient(to right, purple, rgba(15, 159, 216, 0.986), purple);
 }
