@@ -64,12 +64,12 @@ img {
   position: absolute;
   top: 150%;
   left: 32%;
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   border-style: solid;
   border-color: rgb(184, 134, 11);
   border-width: 10px 10px;
-  padding: 25px 15px;
+  padding: 37px 15px;
   background-color: rgba(0,0,0,0.5);
   border-radius: 250px;
   font-size: 50px;
@@ -85,7 +85,7 @@ a {
 
 .pos {
   /* height: 100px; */
-  
+  object-fit: cover;
   margin: 20px auto;
   
 }
