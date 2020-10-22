@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponent';
-import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row, Form } from 'reactstrap';
-import { Link } from 'react-router-dom';
-// import { Control, Form, Errors } from 'react-redux-form';
 
-const required = val => val && val.length;
-const maxLength = len => val => !val || (val.length <= len);
-const minLength = len => val => val && (val.length >= len);
-const isNumber = val => !isNaN(+val);
-const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+// import { Control, Form, Errors } from 'react-redux-form';
 
 class Contact extends Component {
 
@@ -17,7 +9,7 @@ class Contact extends Component {
             textAlign: "center",
         }
     return (
-      <div style={{backgroundColor: "rgb(211, 128, 4)"}}>
+      <div style={{backgroundColor: "rgb(211, 128, 4)", minHeight:"94vh"}}>
         <div class="container">
     <div class="row row-content align-items-center">
       <div class="col" style= {middle}>

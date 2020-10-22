@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { VIDEOS } from '../shared/video';
-import Header from './HeaderComponent';
 import ReactPlayer from 'react-player';
 
 
@@ -15,7 +14,7 @@ class Video extends Component {
 
     render() {
         return (
-            <div >
+            <div class="container-fluid" style={{backgroundColor: "rgb(211, 128, 4)"}}>
 
                 <div className="row row-content align-items-center" style={{ marginRight: "0px" }}>
                     <div key={this.state.videos[0].id} className="col">

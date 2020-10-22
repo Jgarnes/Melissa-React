@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Button, Form, FormGroup, Label } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 
@@ -28,7 +28,7 @@ class Header extends Component {
         return (
             <div style={middle}>
                 
-                <Navbar sticky="top" expand="md" >
+                <Navbar sticky="top" className="bg-dark" expand="md" >
                     <div className="container"  >
                         <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />

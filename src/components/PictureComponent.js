@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { PHOTOS } from '../shared/photos';
-import Header from './HeaderComponent';
 
 class Picture extends Component {
     constructor(props) {

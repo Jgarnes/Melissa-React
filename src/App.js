@@ -6,7 +6,7 @@ import Video from './components/VideosComponent';
 import Podcast from './components/PodcastComponent';
 import Contact from './components/ContactComponent';
 import Header from './components/HeaderComponent';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import './App.css';
 
