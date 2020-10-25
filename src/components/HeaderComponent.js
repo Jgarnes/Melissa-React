@@ -31,7 +31,7 @@ class Header extends Component {
                 <Navbar sticky="top" className="bg-dark" expand="md" >
                     <div className="container"  >
                         <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
-                        <NavbarToggler onClick={this.toggleNav} />
+                        <NavbarToggler className="navbar-dark" onClick={this.toggleNav} />
                         
                         <Collapse style={{justifyContent: 'center'}} isOpen={this.state.isNavOpen} navbar>
                             <Nav Navbar>
