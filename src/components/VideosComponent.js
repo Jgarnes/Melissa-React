@@ -16,50 +16,34 @@ class Video extends Component {
         return (
             <div class="container-fluid" style={{backgroundColor: "rgb(211, 128, 4)"}}>
 
-                <div className="row row-content align-items-center" style={{ marginRight: "0px" }}>
-                    <div key={this.state.videos[0].id} className="col">
-                        <div className="media">
-                            <div className="img-thumbnail" >
-                            <ReactPlayer controls url={this.state.videos[0].film} type="video/M4V"  />
-                                {/* <ReactPlayer controls url={'http://localhost:3001/video/monologue.MP4'} type="video/mp4" /> */}
-                            </div>
-                            <div className="media-body align-self-center">
-                                <h3>{this.state.videos[0].caption}</h3>
-                                <h4 className="d-none d-sm-block">{this.state.videos[0].title}</h4>
-                            </div>
-                        </div>
+                <div className="row row-content align-items-center" key={this.state.videos[0].id}>
+                    <div className="col-md-6 img-thumbnail" >
+                        <ReactPlayer width='100%' height='100%' controls url={this.state.videos[0].film} type="video/M4V"  />
                     </div>
+                    <div className="col media-body">
+                        <h4>{this.state.videos[0].caption}</h4>
+                        <h5>{this.state.videos[0].title}</h5>
+                    </div> 
                 </div>
 
-                <div className="row row-content align-items-center" style={{ marginRight: "0px" }}>
-                    <div key={this.state.videos[1].id} className="col">
-                        <div className="media">
-                            <div className="media-body align-self-center">
-                                <h3>{this.state.videos[1].caption}</h3>
-                                <h4 className="d-none d-sm-block">{this.state.videos[1].title}</h4>
-                            </div>
-                            <div className="img-thumbnail" >
-                            <ReactPlayer controls url={this.state.videos[1].film} type="video/M4V"  />
-                            {/* <ReactPlayer controls url={'http://localhost:3001/video/blackbox_trim.mp4'} type="video/mp4" /> */}
-                            </div>
-
-                        </div>
+                <div className="row row-content align-items-center" key={this.state.videos[1].id}>
+                    <div className="col-md-6 order-md-last img-thumbnail" >
+                        <ReactPlayer width='100%' height='100%' controls url={this.state.videos[1].film} type="video/M4V"  />
                     </div>
+                    <div className="col media-body">
+                        <h4>{this.state.videos[1].caption}</h4>
+                        <h5>{this.state.videos[1].title}</h5>
+                    </div> 
                 </div>
 
-                <div className="row row-content align-items-center" style={{ marginRight: "0px" }}>
-                    <div key={this.state.videos[2].id} className="col">
-                        <div className="media">
-                            <div className="img-thumbnail" >
-                            <ReactPlayer controls url={this.state.videos[2].film} type="video/M4V"  />
-                            {/* <ReactPlayer controls url={'http://localhost:3001/video/songset_trim.mp4'} type="video/mp4" /> */}
-                            </div>
-                            <div className="media-body align-self-center">
-                                <h3>{this.state.videos[2].caption}</h3>
-                                <h4 className="d-none d-sm-block">{this.state.videos[2].title}</h4>
-                            </div>
-                        </div>
+                <div className="row row-content align-items-center" key={this.state.videos[2].id}>
+                    <div className="col-md-6 img-thumbnail" >
+                        <ReactPlayer width='100%' height='100%' controls url={this.state.videos[2].film} type="video/M4V"  />
                     </div>
+                    <div className="col media-body">
+                        <h4>{this.state.videos[2].caption}</h4>
+                        <h5>{this.state.videos[2].title}</h5>
+                    </div> 
                 </div>
 
             </div>
